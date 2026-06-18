@@ -1,0 +1,1137 @@
+[2026-06-17T16:24:19.915Z] Error updating lead:
+CastError: Cast to ObjectId failed for value "system" (type string) at path "updatedBy" because of "BSONError"
+    at ObjectId.cast (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\schema\objectid.js:250:11)
+    at SchemaType.applySetters (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\schematype.js:1219:12)
+    at SchemaType.castForQuery (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\schematype.js:1633:15)
+    at castUpdateVal (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\helpers\query\castUpdate.js:576:19)
+    at walkUpdatePath (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\helpers\query\castUpdate.js:381:24)
+    at castUpdate (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\helpers\query\castUpdate.js:110:7)
+    at model.Query._castUpdate (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\query.js:4727:10)
+    at model.Query._findOneAndUpdate (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\query.js:3341:23)
+    at model.Query.exec (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+
+[2026-06-17T16:24:19.917Z] Error updating lead:
+Error: Failed to update lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:616:32)
+    at LeadRepository.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:192:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:212:33)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:315:29)
+
+[2026-06-17T16:24:19.918Z] Error updating lead:
+Error: Failed to update lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:616:32)
+    at LeadRepository.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:192:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:212:33)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:315:29)
+
+[2026-06-17T16:24:19.920Z] Error caught by global handler:
+Error: Failed to update lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:616:32)
+    at LeadRepository.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:192:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:212:33)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:315:29)
+
+[2026-06-17T16:27:30.367Z] Error creating activity:
+ValidationError: ActivityLog validation failed: employee: Employee reference is required
+    at Document.invalidate (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\document.js:3221:32)
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\document.js:3014:17
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+
+[2026-06-17T16:31:46.891Z] Error updating lead:
+ValidationException: Cannot transition from 6a32cb0b57b44477ab4e4785 to INACTIVE
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:212:19)
+    at LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:190:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:324:29)
+
+[2026-06-17T16:31:46.904Z] Error updating lead:
+ValidationException: Cannot transition from 6a32cb0b57b44477ab4e4785 to INACTIVE
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:212:19)
+    at LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:190:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:324:29)
+
+[2026-06-17T16:32:09.148Z] Error creating lead:
+ValidationError: Lead validation failed: lastName: Last name must be at least 2 characters
+    at Document.invalidate (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\document.js:3221:32)
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\document.js:3014:17
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+
+[2026-06-17T16:32:09.161Z] Error creating lead:
+Error: Failed to create lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:616:32)
+    at LeadRepository.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:54:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:69:30)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-17T16:32:09.172Z] Error creating lead:
+Error: Failed to create lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:616:32)
+    at LeadRepository.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:54:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:69:30)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-17T16:32:09.181Z] Error caught by global handler:
+Error: Failed to create lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:616:32)
+    at LeadRepository.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:54:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:69:30)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-17T16:33:29.385Z] Error updating lead:
+ValidationException: Cannot transition from 6a32cb0b57b44477ab4e4785 to LOST
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:212:19)
+    at LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:190:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:324:29)
+
+[2026-06-17T16:33:29.399Z] Error updating lead:
+ValidationException: Cannot transition from 6a32cb0b57b44477ab4e4785 to LOST
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:212:19)
+    at LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:190:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:324:29)
+
+[2026-06-17T16:33:37.674Z] Error updating lead:
+ValidationError: Validation failed: status: `` is not a valid enum value for path `status`.
+    at _done (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\helpers\updateValidators.js:228:19)
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\helpers\updateValidators.js:204:11
+    at schemaPath.doValidate.updateValidator (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\helpers\updateValidators.js:162:13)
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\schematype.js:1360:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+
+[2026-06-17T16:33:37.689Z] Error updating lead:
+Error: Failed to update lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:616:32)
+    at LeadRepository.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:192:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:212:33)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:324:29)
+
+[2026-06-17T16:33:37.700Z] Error updating lead:
+Error: Failed to update lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:616:32)
+    at LeadRepository.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:192:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:212:33)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:324:29)
+
+[2026-06-17T16:33:37.709Z] Error caught by global handler:
+Error: Failed to update lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:616:32)
+    at LeadRepository.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:192:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:212:33)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:324:29)
+
+[2026-06-17T16:38:48.640Z] Error caught by global handler:
+SyntaxError: Bad escaped character in JSON at position 12 (line 1 column 13)
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:227:14)
+    at invokeCallback (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:509:28)
+    at endReadableNT (node:internal/streams/readable:1735:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+
+[2026-06-17T16:40:03.811Z] Error updating lead status:
+ValidationException: Cannot transition from 6a32ccc57007cf88a3a8fc94 to QUALIFIED
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:212:19)
+    at LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:251:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T16:40:03.812Z] Error updating lead status:
+ValidationException: Cannot transition from 6a32ccc57007cf88a3a8fc94 to QUALIFIED
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:212:19)
+    at LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:251:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T16:41:37.586Z] Error fetching lead:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadController.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:239:26)
+
+[2026-06-17T16:41:37.589Z] Error fetching lead:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadController.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:239:26)
+
+[2026-06-17T16:41:37.590Z] Error retrieving lead:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadController.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:239:26)
+
+[2026-06-17T16:41:37.592Z] Error caught by global handler:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadController.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:239:26)
+
+[2026-06-17T16:41:37.606Z] Error fetching lead:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadController.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:239:26)
+
+[2026-06-17T16:41:37.607Z] Error fetching lead:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadController.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:239:26)
+
+[2026-06-17T16:41:37.608Z] Error retrieving lead:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadController.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:239:26)
+
+[2026-06-17T16:41:37.609Z] Error caught by global handler:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadController.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:239:26)
+
+[2026-06-17T16:46:19.036Z] Error caught by global handler:
+Error: Route not found: GET /favicon.ico
+    at notFoundHandler (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\middleware\errorHandler.js:106:19)
+    at Layer.handle [as handle_request] (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\express\lib\router\index.js:286:9
+    at router.process_params (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\express\lib\router\index.js:280:10)
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\server.js:46:5
+    at Layer.handle [as handle_request] (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\express\lib\router\index.js:286:9
+
+[2026-06-17T17:34:58.622Z] Error creating lead:
+ValidationError: Lead validation failed: lastName: Last name must be at least 2 characters
+    at Document.invalidate (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\document.js:3221:32)
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\document.js:3014:17
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+
+[2026-06-17T17:34:58.629Z] Error creating lead:
+Error: Failed to create lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:616:32)
+    at LeadRepository.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:54:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:69:30)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-17T17:34:58.633Z] Error creating lead:
+Error: Failed to create lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:616:32)
+    at LeadRepository.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:54:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:69:30)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-17T17:34:58.638Z] Error caught by global handler:
+Error: Failed to create lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:616:32)
+    at LeadRepository.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:54:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:69:30)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-17T17:36:12.978Z] Error creating lead:
+ValidationError: Lead validation failed: lastName: Last name must be at least 2 characters
+    at Document.invalidate (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\document.js:3221:32)
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\document.js:3014:17
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+
+[2026-06-17T17:36:12.985Z] Error creating lead:
+Error: Failed to create lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:616:32)
+    at LeadRepository.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:54:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:69:30)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-17T17:36:12.991Z] Error creating lead:
+Error: Failed to create lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:616:32)
+    at LeadRepository.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:54:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:69:30)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-17T17:36:12.998Z] Error caught by global handler:
+Error: Failed to create lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:616:32)
+    at LeadRepository.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:54:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:69:30)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-17T17:38:06.668Z] Error creating lead:
+ValidationError: Lead validation failed: lastName: Last name must be at least 2 characters
+    at Document.invalidate (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\document.js:3221:32)
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\document.js:3014:17
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+
+[2026-06-17T17:38:06.670Z] Error creating lead:
+Error: Failed to create lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:616:32)
+    at LeadRepository.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:54:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:69:30)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-17T17:38:06.672Z] Error creating lead:
+Error: Failed to create lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:616:32)
+    at LeadRepository.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:54:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:69:30)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-17T17:38:06.674Z] Error caught by global handler:
+Error: Failed to create lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:616:32)
+    at LeadRepository.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:54:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:69:30)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-17T17:41:06.454Z] Error updating lead:
+ValidationException: Cannot transition from 6a32d644ab0796a815dfd9f2 to NEW_LEAD
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:212:19)
+    at LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:190:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:324:29)
+
+[2026-06-17T17:41:06.471Z] Error updating lead:
+ValidationException: Cannot transition from 6a32d644ab0796a815dfd9f2 to NEW_LEAD
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:212:19)
+    at LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:190:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:324:29)
+
+[2026-06-17T17:42:01.700Z] Error creating lead:
+ValidationError: Lead validation failed: phone: Invalid phone format
+    at Document.invalidate (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\document.js:3221:32)
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\document.js:3014:17
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+
+[2026-06-17T17:42:01.775Z] Error creating lead:
+Error: Failed to create lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:616:32)
+    at LeadRepository.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:54:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:69:30)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-17T17:42:01.839Z] Error creating lead:
+Error: Failed to create lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:616:32)
+    at LeadRepository.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:54:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:69:30)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-17T17:42:01.941Z] Error caught by global handler:
+Error: Failed to create lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:616:32)
+    at LeadRepository.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:54:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:69:30)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-17T17:42:36.691Z] Auto-assignment failed:
+AutoAssignmentException: No available agents for assignment
+    at AutoAssignmentService.autoAssignLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\AutoAssignmentService.js:40:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:75:41)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-17T17:44:05.327Z] Auto-assignment failed:
+AutoAssignmentException: No available agents for assignment
+    at AutoAssignmentService.autoAssignLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\AutoAssignmentService.js:40:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:75:41)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-17T17:45:17.361Z] Error updating lead status:
+ValidationException: Cannot transition from INACTIVE to INACTIVE
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:212:19)
+    at LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:251:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T17:45:17.376Z] Error updating lead status:
+ValidationException: Cannot transition from INACTIVE to INACTIVE
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:212:19)
+    at LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:251:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T17:53:36.080Z] Error updating lead:
+ValidationException: Cannot transition from NEW_LEAD to BOOKED
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:250:19)
+    at LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:190:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:324:29)
+
+[2026-06-17T17:53:36.094Z] Error updating lead:
+ValidationException: Cannot transition from NEW_LEAD to BOOKED
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:250:19)
+    at LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:190:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:324:29)
+
+[2026-06-17T17:55:21.434Z] Error updating lead:
+ValidationException: Cannot transition from INTERESTED to SOLD
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:250:19)
+    at LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:190:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:324:29)
+
+[2026-06-17T17:55:21.454Z] Error updating lead:
+ValidationException: Cannot transition from INTERESTED to SOLD
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:250:19)
+    at LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:190:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:324:29)
+
+[2026-06-17T18:01:11.774Z] Error updating lead status:
+ValidationException: Cannot transition from SITE_VISIT_SCHEDULED to BOOKED
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:253:19)
+    at LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:251:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:01:11.790Z] Error updating lead status:
+ValidationException: Cannot transition from SITE_VISIT_SCHEDULED to BOOKED
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:253:19)
+    at LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:251:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:02:14.408Z] Error fetching lead:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:248:26)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:02:14.410Z] Error fetching lead:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:248:26)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:02:14.411Z] Error updating lead status:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:248:26)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:02:14.413Z] Error updating lead status:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:248:26)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:02:14.416Z] Error caught by global handler:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:248:26)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:02:49.687Z] Error fetching lead:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:248:26)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:02:49.689Z] Error fetching lead:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:248:26)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:02:49.691Z] Error updating lead status:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:248:26)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:02:49.693Z] Error updating lead status:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:248:26)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:02:49.696Z] Error caught by global handler:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:248:26)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:04:38.252Z] Error caught by global handler:
+SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:227:14)
+    at invokeCallback (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:509:28)
+    at endReadableNT (node:internal/streams/readable:1735:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+
+[2026-06-17T18:04:54.508Z] Error caught by global handler:
+SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:227:14)
+    at invokeCallback (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:509:28)
+    at endReadableNT (node:internal/streams/readable:1735:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+
+[2026-06-17T18:05:20.877Z] Error updating lead status:
+ValidationException: Cannot transition from SITE_VISIT_SCHEDULED to BOOKED
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:253:19)
+    at LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:251:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:05:20.879Z] Error updating lead status:
+ValidationException: Cannot transition from SITE_VISIT_SCHEDULED to BOOKED
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:253:19)
+    at LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:251:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:06:16.488Z] Error updating lead status:
+ValidationException: Cannot transition from BOOKED to BOOKED
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:254:19)
+    at LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:251:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:06:16.508Z] Error updating lead status:
+ValidationException: Cannot transition from BOOKED to BOOKED
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:254:19)
+    at LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:251:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:06:18.291Z] Error updating lead status:
+ValidationException: Cannot transition from BOOKED to BOOKED
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:254:19)
+    at LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:251:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:06:18.327Z] Error updating lead status:
+ValidationException: Cannot transition from BOOKED to BOOKED
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:254:19)
+    at LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:251:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:06:22.823Z] Error updating lead status:
+ValidationException: Cannot transition from BOOKED to SITE_VISIT_SCHEDULED
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:254:19)
+    at LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:251:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:06:22.842Z] Error updating lead status:
+ValidationException: Cannot transition from BOOKED to SITE_VISIT_SCHEDULED
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:254:19)
+    at LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:251:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:06:39.342Z] Error caught by global handler:
+Error: Route not found: GET /
+    at notFoundHandler (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\middleware\errorHandler.js:106:19)
+    at Layer.handle [as handle_request] (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\express\lib\router\index.js:286:9
+    at router.process_params (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\express\lib\router\index.js:280:10)
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\server.js:46:5
+    at Layer.handle [as handle_request] (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\express\lib\router\index.js:286:9
+
+[2026-06-17T18:06:43.173Z] Error caught by global handler:
+Error: Route not found: GET /favicon.ico
+    at notFoundHandler (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\middleware\errorHandler.js:106:19)
+    at Layer.handle [as handle_request] (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\express\lib\router\index.js:286:9
+    at router.process_params (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\express\lib\router\index.js:280:10)
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\server.js:46:5
+    at Layer.handle [as handle_request] (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\express\lib\router\index.js:286:9
+
+[2026-06-17T18:06:50.809Z] Error fetching lead:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:248:26)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:06:50.811Z] Error fetching lead:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:248:26)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:06:50.812Z] Error updating lead status:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:248:26)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:06:50.813Z] Error updating lead status:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:248:26)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:06:50.815Z] Error caught by global handler:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:248:26)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:07:40.016Z] Error fetching lead:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:248:26)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:07:40.019Z] Error fetching lead:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:248:26)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:07:40.021Z] Error updating lead status:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:248:26)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:07:40.023Z] Error updating lead status:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:248:26)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:07:40.026Z] Error caught by global handler:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:248:26)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:07:54.587Z] Error updating lead status:
+ValidationException: Cannot transition from 6a32d644ab0796a815dfd9f2 to IN_NEGOTIATION
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:254:19)
+    at LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:251:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:07:54.594Z] Error updating lead status:
+ValidationException: Cannot transition from 6a32d644ab0796a815dfd9f2 to IN_NEGOTIATION
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:254:19)
+    at LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:251:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:12:07.427Z] Error updating lead status:
+ValidationException: Cannot transition from BOOKED to SITE_VISIT_SCHEDULED
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:254:19)
+    at LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:251:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:12:07.431Z] Error updating lead status:
+ValidationException: Cannot transition from BOOKED to SITE_VISIT_SCHEDULED
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:254:19)
+    at LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:251:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:14:17.237Z] Error updating lead status:
+ValidationException: Cannot transition from BOOKED to SITE_VISIT_COMPLETED
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:254:19)
+    at LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:251:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:14:17.268Z] Error updating lead status:
+ValidationException: Cannot transition from BOOKED to SITE_VISIT_COMPLETED
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:254:19)
+    at LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:251:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:14:27.263Z] Error updating lead status:
+ValidationException: Cannot transition from BOOKED to ATTEMPTED_CALL
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:254:19)
+    at LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:251:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:14:27.279Z] Error updating lead status:
+ValidationException: Cannot transition from BOOKED to ATTEMPTED_CALL
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:254:19)
+    at LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:251:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:17:30.776Z] Error updating lead status:
+ValidationException: Cannot transition from INACTIVE to BOOKED
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:265:19)
+    at LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:251:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:17:30.777Z] Error updating lead status:
+ValidationException: Cannot transition from INACTIVE to BOOKED
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:265:19)
+    at LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:251:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-17T18:17:49.122Z] Error fetching lead:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadController.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:239:26)
+
+[2026-06-17T18:17:49.124Z] Error fetching lead:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadController.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:239:26)
+
+[2026-06-17T18:17:49.126Z] Error retrieving lead:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadController.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:239:26)
+
+[2026-06-17T18:17:49.129Z] Error caught by global handler:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadController.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:239:26)
+
+[2026-06-17T18:17:49.140Z] Error fetching lead:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadController.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:239:26)
+
+[2026-06-17T18:17:49.142Z] Error fetching lead:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadController.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:239:26)
+
+[2026-06-17T18:17:49.143Z] Error retrieving lead:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadController.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:239:26)
+
+[2026-06-17T18:17:49.145Z] Error caught by global handler:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadController.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:239:26)
+
+[2026-06-17T18:17:57.101Z] Error fetching lead:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadController.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:239:26)
+
+[2026-06-17T18:17:57.102Z] Error fetching lead:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadController.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:239:26)
+
+[2026-06-17T18:17:57.103Z] Error retrieving lead:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadController.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:239:26)
+
+[2026-06-17T18:17:57.105Z] Error caught by global handler:
+Error: Lead not found
+    at LeadRepository.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:91:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:124:26)
+    at async LeadController.getLeadById (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:239:26)
+
+[2026-06-17T18:18:50.240Z] Error updating lead:
+ValidationException: Cannot transition from 6a32d644ab0796a815dfd9f2 to SOLD
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:265:19)
+    at LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:190:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:324:29)
+
+[2026-06-17T18:18:50.253Z] Error updating lead:
+ValidationException: Cannot transition from 6a32d644ab0796a815dfd9f2 to SOLD
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:265:19)
+    at LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:190:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:324:29)
+
+[2026-06-17T18:21:54.203Z] Error updating lead:
+ValidationError: Validation failed: source: `6a32d644ab0796a815dfda00` is not a valid enum value for path `source`.
+    at _done (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\helpers\updateValidators.js:228:19)
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\helpers\updateValidators.js:204:11
+    at schemaPath.doValidate.updateValidator (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\helpers\updateValidators.js:162:13)
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+
+[2026-06-17T18:21:54.215Z] Error updating lead:
+Error: Failed to update lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:616:32)
+    at LeadRepository.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:192:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:212:33)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:324:29)
+
+[2026-06-17T18:21:54.228Z] Error updating lead:
+Error: Failed to update lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:616:32)
+    at LeadRepository.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:192:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:212:33)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:324:29)
+
+[2026-06-17T18:21:54.243Z] Error caught by global handler:
+Error: Failed to update lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:616:32)
+    at LeadRepository.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:192:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:212:33)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:324:29)
+
+[2026-06-17T18:22:01.661Z] Error updating lead:
+ValidationException: Cannot transition from 6a32d644ab0796a815dfd9f2 to CONVERTED
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:265:19)
+    at LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:190:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:324:29)
+
+[2026-06-17T18:22:01.667Z] Error updating lead:
+ValidationException: Cannot transition from 6a32d644ab0796a815dfd9f2 to CONVERTED
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:265:19)
+    at LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:190:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:324:29)
+
+[2026-06-17T18:22:07.118Z] Error updating lead:
+ValidationException: Cannot transition from 6a32d644ab0796a815dfd9f2 to NEW_LEAD
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:265:19)
+    at LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:190:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:324:29)
+
+[2026-06-17T18:22:07.133Z] Error updating lead:
+ValidationException: Cannot transition from 6a32d644ab0796a815dfd9f2 to NEW_LEAD
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:265:19)
+    at LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:190:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:324:29)
+
+[2026-06-18T05:46:50.161Z] Auto-assignment failed:
+AutoAssignmentException: No available agents for assignment
+    at AutoAssignmentService.autoAssignLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\AutoAssignmentService.js:40:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:75:41)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-18T06:32:20.065Z] Error updating lead:
+ValidationException: Cannot transition from SITE_VISIT_SCHEDULED to SOLD
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:265:19)
+    at LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:190:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:324:29)
+
+[2026-06-18T06:32:20.093Z] Error updating lead:
+ValidationException: Cannot transition from SITE_VISIT_SCHEDULED to SOLD
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:265:19)
+    at LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:190:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:324:29)
+
+[2026-06-18T06:32:25.304Z] Error updating lead:
+ValidationException: Cannot transition from SITE_VISIT_SCHEDULED to CONVERTED
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:265:19)
+    at LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:190:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:324:29)
+
+[2026-06-18T06:32:25.326Z] Error updating lead:
+ValidationException: Cannot transition from SITE_VISIT_SCHEDULED to CONVERTED
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:265:19)
+    at LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:190:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:324:29)
+
+[2026-06-18T06:37:37.730Z] Error checking for duplicates:
+DuplicateException: Lead with email santhith2006@gmail.com already exists
+    at DuplicateCheckService.checkForDuplicate (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\DuplicateCheckService.js:93:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:48:17)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-18T06:37:37.745Z] Error creating lead:
+DuplicateException: Lead with email santhith2006@gmail.com already exists
+    at DuplicateCheckService.checkForDuplicate (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\DuplicateCheckService.js:93:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:48:17)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-18T06:37:37.759Z] Error creating lead:
+DuplicateException: Lead with email santhith2006@gmail.com already exists
+    at DuplicateCheckService.checkForDuplicate (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\DuplicateCheckService.js:93:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:48:17)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-18T06:37:49.607Z] Error creating lead:
+MongoServerError: E11000 duplicate key error collection: lead-crm.leads index: email_1 dup key: { email: "santhith3008@gmail.com" }
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongodb\lib\operations\insert.js:50:33
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongodb\lib\operations\command.js:84:64
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+
+[2026-06-18T06:37:49.620Z] Error creating lead:
+Error: Failed to create lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:658:32)
+    at LeadRepository.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:54:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:69:30)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-18T06:37:49.630Z] Error creating lead:
+Error: Failed to create lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:658:32)
+    at LeadRepository.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:54:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:69:30)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-18T06:37:49.655Z] Error caught by global handler:
+Error: Failed to create lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:658:32)
+    at LeadRepository.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:54:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:69:30)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-18T06:37:57.820Z] Error creating lead:
+MongoServerError: E11000 duplicate key error collection: lead-crm.leads index: email_1 dup key: { email: "santhith3008@gmail.com" }
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongodb\lib\operations\insert.js:50:33
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongodb\lib\operations\command.js:84:64
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+
+[2026-06-18T06:37:57.834Z] Error creating lead:
+Error: Failed to create lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:658:32)
+    at LeadRepository.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:54:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:69:30)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-18T06:37:57.851Z] Error creating lead:
+Error: Failed to create lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:658:32)
+    at LeadRepository.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:54:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:69:30)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-18T06:37:57.883Z] Error caught by global handler:
+Error: Failed to create lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:658:32)
+    at LeadRepository.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:54:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:69:30)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-18T06:38:04.615Z] Error creating lead:
+MongoServerError: E11000 duplicate key error collection: lead-crm.leads index: email_1 dup key: { email: "santhith3008@gmail.com" }
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongodb\lib\operations\insert.js:50:33
+    at C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\node_modules\mongodb\lib\operations\command.js:84:64
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+
+[2026-06-18T06:38:04.627Z] Error creating lead:
+Error: Failed to create lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:658:32)
+    at LeadRepository.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:54:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:69:30)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-18T06:38:04.635Z] Error creating lead:
+Error: Failed to create lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:658:32)
+    at LeadRepository.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:54:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:69:30)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-18T06:38:04.664Z] Error caught by global handler:
+Error: Failed to create lead
+    at LeadRepository._handleError (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:658:32)
+    at LeadRepository.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\repositories\LeadRepository.js:54:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:69:30)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-18T06:39:02.680Z] Auto-assignment failed:
+AutoAssignmentException: No available agents for assignment
+    at AutoAssignmentService.autoAssignLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\AutoAssignmentService.js:40:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:75:41)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-18T06:45:38.396Z] Auto-assignment failed:
+AutoAssignmentException: No available agents for assignment
+    at AutoAssignmentService.autoAssignLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\AutoAssignmentService.js:40:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadService.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:75:41)
+    at async LeadController.createLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:84:26)
+
+[2026-06-18T06:45:38.413Z] Error updating lead status:
+ValidationException: Cannot transition from NEW_LEAD to CONVERTED
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:265:19)
+    at LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:251:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-18T06:45:38.413Z] Error updating lead status:
+ValidationException: Cannot transition from NEW_LEAD to CONVERTED
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:265:19)
+    at LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:251:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-18T06:46:13.844Z] Error updating lead status:
+ValidationException: Cannot transition from ATTEMPTED_CALL to ATTEMPTED_CALL
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:265:19)
+    at LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:251:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-18T06:46:13.846Z] Error updating lead status:
+ValidationException: Cannot transition from ATTEMPTED_CALL to ATTEMPTED_CALL
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:265:19)
+    at LeadService.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:251:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLeadStatus (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:487:29)
+
+[2026-06-18T07:41:06.236Z] Error updating lead:
+ValidationException: Cannot transition from BOOKED to LOST
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:265:19)
+    at LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:190:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:324:29)
+
+[2026-06-18T07:41:06.254Z] Error updating lead:
+ValidationException: Cannot transition from BOOKED to LOST
+    at LeadValidationService.validateStatusTransition (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadValidationService.js:265:19)
+    at LeadService.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\services\LeadService_Complete.js:190:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async LeadController.updateLead (C:\Users\Santhith\OneDrive\Desktop\IP-2 VSC\lead-management-module\src\controllers\LeadController.js:324:29)
+

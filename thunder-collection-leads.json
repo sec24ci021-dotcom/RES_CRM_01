@@ -1,0 +1,123 @@
+{
+    "name": "Lead Management - Collection",
+    "version": "1.0",
+    "variables": [
+        { "key": "baseUrl", "value": "http://localhost:3000/api/v1" },
+        { "key": "authToken", "value": "" }
+    ],
+    "requests": [{
+            "name": "Health Check",
+            "method": "GET",
+            "url": "{{baseUrl}}/health",
+            "headers": [
+                { "key": "Content-Type", "value": "application/json" }
+            ]
+        },
+        {
+            "name": "List Leads (page=1)",
+            "method": "GET",
+            "url": "{{baseUrl}}/leads?page=1&limit=10",
+            "headers": [
+                { "key": "Content-Type", "value": "application/json" },
+                { "key": "Authorization", "value": "Bearer {{authToken}}" }
+            ]
+        },
+        {
+            "name": "Create Lead",
+            "method": "POST",
+            "url": "{{baseUrl}}/leads",
+            "headers": [
+                { "key": "Content-Type", "value": "application/json" },
+                { "key": "Authorization", "value": "Bearer {{authToken}}" }
+            ],
+            "body": {
+                "mode": "raw",
+                "raw": {
+                    "firstName": "John",
+                    "lastName": "Doe",
+                    "email": "john.doe@example.com",
+                    "phone": "+1234567890",
+                    "source": "web",
+                    "priority": "HIGH",
+                    "autoAssign": true
+                }
+            }
+        },
+        {
+            "name": "Get Lead By ID",
+            "method": "GET",
+            "url": "{{baseUrl}}/leads/{{leadId}}",
+            "headers": [
+                { "key": "Content-Type", "value": "application/json" },
+                { "key": "Authorization", "value": "Bearer {{authToken}}" }
+            ]
+        },
+        {
+            "name": "Update Lead (PUT)",
+            "method": "PUT",
+            "url": "{{baseUrl}}/leads/{{leadId}}",
+            "headers": [
+                { "key": "Content-Type", "value": "application/json" },
+                { "key": "Authorization", "value": "Bearer {{authToken}}" }
+            ],
+            "body": { "mode": "raw", "raw": { "firstName": "Jane", "status": "CONTACTED" } }
+        },
+        {
+            "name": "Delete Lead",
+            "method": "DELETE",
+            "url": "{{baseUrl}}/leads/{{leadId}}",
+            "headers": [
+                { "key": "Content-Type", "value": "application/json" },
+                { "key": "Authorization", "value": "Bearer {{authToken}}" }
+            ]
+        },
+        {
+            "name": "Update Lead Status",
+            "method": "PATCH",
+            "url": "{{baseUrl}}/leads/{{leadId}}/status",
+            "headers": [
+                { "key": "Content-Type", "value": "application/json" },
+                { "key": "Authorization", "value": "Bearer {{authToken}}" }
+            ],
+            "body": { "mode": "raw", "raw": { "status": "QUALIFIED" } }
+        },
+        {
+            "name": "Assign Lead",
+            "method": "POST",
+            "url": "{{baseUrl}}/leads/{{leadId}}/assign",
+            "headers": [
+                { "key": "Content-Type", "value": "application/json" },
+                { "key": "Authorization", "value": "Bearer {{authToken}}" }
+            ],
+            "body": { "mode": "raw", "raw": { "agentId": "{{agentId}}" } }
+        },
+        {
+            "name": "Convert Lead",
+            "method": "POST",
+            "url": "{{baseUrl}}/leads/{{leadId}}/convert",
+            "headers": [
+                { "key": "Content-Type", "value": "application/json" },
+                { "key": "Authorization", "value": "Bearer {{authToken}}" }
+            ],
+            "body": { "mode": "raw", "raw": { "value": 100000 } }
+        },
+        {
+            "name": "Search Leads",
+            "method": "GET",
+            "url": "{{baseUrl}}/leads/search?q=john&page=1&limit=10",
+            "headers": [
+                { "key": "Content-Type", "value": "application/json" },
+                { "key": "Authorization", "value": "Bearer {{authToken}}" }
+            ]
+        },
+        {
+            "name": "Get Stats",
+            "method": "GET",
+            "url": "{{baseUrl}}/leads/stats",
+            "headers": [
+                { "key": "Content-Type", "value": "application/json" },
+                { "key": "Authorization", "value": "Bearer {{authToken}}" }
+            ]
+        }
+    ]
+}
